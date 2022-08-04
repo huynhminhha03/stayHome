@@ -1,0 +1,24 @@
+:root {
+    /* --primary-color: #2273BE; */
+    /* --primary-color: #EE4F34; */
+    --primary-color: rgb(239, 113, 128);
+    --white-color: rgb(255, 255, 255);
+    --black-color: #000;
+    --border-color: #eaeaea;
+    --height-navbar: 55px;
+    --medium-gray-color: #94979e;
+    --btn-size-m: 32px;
+    --btn-size-l: 48px;
+    --border-color: #bdbdbd;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}

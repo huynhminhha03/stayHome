@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homestay - Chuyên trang tin tức, review Homestay đầu tiên Việt Nam với đầy đủ thông tin chính xác cập nhật thường xuyên và nhanh nhất.">
+    <title>Chuyên trang tin tức Homestay đầu tiên Việt Nam</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header id="header">
+            <div class="grid wide">
+                <div class="header__logo">
+                    <a href="./index.html" class="header__logo-link">
+                        <img src="./assets/img/logo.png" alt="Homestay - Kênh tin tức tổng hợp về HomeStay và du lịch bụi" class="header__logo-img">
+                    </a>
+                </div>
+                <div class="header__navbar">
+                    <div class="header__navbar-list-btn">
+                        <i class="fa-solid fa-list header__navbar-list-btn-icon"></i>
+                    </div>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="./index.html" class="header__navbar-item-link">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--has-homestay-list">
+                            <a href="./homestay.html" class="header__navbar-item-link">
+                                Homestay
+                                <i class="fa-solid fa-angle-down header__navbar-item-icon"></i>
+                            </a>
+                            <div class="header__homestay">
+                                <ul class="candidate-list">
+                                    <li class="candidate-item">
+                                        <a href="https://kenhhomestay.com/top-50-homestay-dep-da-lat/" class="candidate-item__link">
+                                            Homestay Đà Lạt
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="https://kenhhomestay.com/homestay-gia-re-vung-tau/" class="candidate-item__link">
+                                            Homestay Vũng Tàu
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="https://kenhhomestay.com/homestay-da-nang/" class="candidate-item__link">
+                                            Homestay Đà Nẵng
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="https://kenhhomestay.com/homestay-ha-noi/" class="candidate-item__link">
+                                            Homestay Hà Nội
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="https://kenhhomestay.com/top-50-homestay-dep-sai-gon-tphcm/" class="candidate-item__link">
+                                            Homestay Sài Gòn
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="https://kenhhomestay.com/homestay-nha-trang-1/" class="candidate-item__link">
+                                            Homestay Nha Trang
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./backpacking.html" class="header__navbar-item-link">
+                                Phượt
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--has-villa-list">
+                            <a href="./villa.html" class="header__navbar-item-link">
+                                Villa
+                                <i class="fa-solid fa-angle-down header__navbar-item-icon"></i>
+                            </a>
+                            <div class="header__villa">
+                                <ul class="candidate-list">
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Villa Vũng Tàu
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Villa Đà Nẵng
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Villa Phú Quốc
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Villa Đà Lạt
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Villa Hà Nội
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Villa Mũi Né Phan Thiết
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./toplist.html" class="header__navbar-item-link">
+                                Top list
+                            </a>
+                            
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./bookroom.html" class="header__navbar-item-link">
+                                Đặt phòng
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./booktickets.html" class="header__navbar-item-link">
+                                Đặt vé xe Limouse
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--has-synthanic-list ">
+                            <a href="#" class="header__navbar-item-link">
+                                Tổng hợp
+                                <i class="fa-solid fa-angle-down header__navbar-item-icon"></i>
+                            </a>
+                            <div class="header__synthanic">
+                                <ul class="candidate-list">
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Resort
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Khách sạn
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Nhà nghỉ
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Farmstay
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Căn hộ
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Địa điểm
+                                        </a>
+                                    </li>
+                                    <li class="candidate-item">
+                                        <a href="" class="candidate-item__link">
+                                            Liên hệ quảng cáo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="header__navbar-search">
+                        <input type="text" placeholder="Tìm resort, homestay, hoặc villa,..." class="header__navbar-search-input">
+                        <div class="header__navbar-search-btn">
+                            <i class="fa-solid fa-magnifying-glass header__navbar-search-icon"></i>
+                        </div>
+                    </div>
+                    <div class="header__navbar-search-btn hide-on-mobile-tablet">
+                        <i class="fa-solid fa-magnifying-glass header__navbar-search-icon"></i>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-9 m-12 c-12">
+                        <div class="home-product">
+                            <h4 class="page-posts">
+                                675 posts in
+                            </h4>
+                            <h3 class="page-name">
+                                Toplist
+                            </h3>
+                            <div class="row">
+                                <div class="col l-6 m-6 s-12">
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
+                                        <img src="https://i2.wp.com/kenhhomestay.com/wp-content/uploads/2018/09/resort-hon-rom-4-1-397x230.jpg" alt="" class="home-product-item__img ">
+                                        <span class="home-product-item__emotion">
+                                            <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
+                                        </span>
+                                        </div>
+                                        
+                                        <h3 class="home-product-item__heading">
+                                            Review thác Prenn - Chốn rừng xanh giữa thiên nhiên Đà LạtTop 14 Resort Hòn Rơm giá rẻ đẹp view biển có hồ bơi và gần đồi cát bay
+                                        </h3>
+                                        <span class="home-product-item__desc">
+                                            Mũi Né Phan Thiết hiện đang là điểm du lịch hấp dẫn với nhiều du khách trong và ngoài nước. Những khu resort Hòn Rơm, resort khu vực Mũi Né…
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col l-6 m-6 s-12">
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
+                                            <img src="https://i2.wp.com/kenhhomestay.com/wp-content/uploads/2021/06/resort-ninh-binh-15-397x230.jpg" alt="" class="home-product-item__img">
+                                            <span class="home-product-item__emotion">
+                                                <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
+                                            </span>
+                                        </div>
+                                        <h3 class="home-product-item__heading">
+                                            Top 17 Resort Ninh Bình giá rẻ view đẹp gần Tràng An, Tam Cốc, Hang Múa
+                                        </h3>
+                                        <span class="home-product-item__desc">
+                                            Cố Đô Hoa Lư – Ninh Bình hiện nay là một địa điểm du lịch vô cùng nổi tiếng, luôn đón rất nhiều lượt du khách kể cả trong và…
+                                        </span>
+                                    </a>
+                                </div>
+        
+                                <div class="col l-6 m-6 s-12">
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
+                                            <img src="https://i1.wp.com/kenhhomestay.com/wp-content/uploads/2018/01/homestay-ben-tre-3-397x230.jpg" class="home-product-item__img">
+                                            <span class="home-product-item__emotion">
+                                                <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
+                                            </span>
+                                        </div>
+                                        <h3 class="home-product-item__heading">
+                                            Top 25 Homestay Bến Tre giá rẻ view đẹp decor xinh đậm chất miệt vườn
+                                        </h3>
+                                        <span class="home-product-item__desc">
+                                            Bến Tre là vùng đất gắn liền với những hàng dừa nghiêng bóng trên sông. Đặc trưng cho một không gian văn hóa tiêu biểu của vùng sông nước. Bến…
+                                    </a>
+                                </div>
+        
+                                <div class="col l-6 m-6 s-12">
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
+                                            <img src="https://i3.wp.com/kenhhomestay.com/wp-content/uploads/2021/06/resort-can-tho-2-397x230.jpg"  class="home-product-item__img">
+                                            <span class="home-product-item__emotion">
+                                                <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
+                                            </span>
+                                        </div>
+                                        <h3 class="home-product-item__heading">
+                                            Top 24 Resort Cần Thơ đẹp gần trung tâm giá rẻ từ 3-4-5 sao giá tốt nhất
+                                        </h3>
+                                        <span class="home-product-item__desc">
+                                            Cần Thơ là một đô thị lớn của khu vực đồng bằng sông Cửu Long, có mạng lưới kênh rạch chằng chịt kết hợp với sự nhộn nhịp của chợ…
+                                        </span>
+                                    </a>
+                                </div>
+        
+                                <div class="col l-6 m-6 s-12">
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
+                                            <img src="https://i1.wp.com/kenhhomestay.com/wp-content/uploads/2022/06/cau-tinh-yeu-da-nang-1-397x230.jpg" class="home-product-item__img">
+                                            <span class="home-product-item__emotion">
+                                                <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
+                                            </span>   
+                                        </div>
+                                        <h3 class="home-product-item__heading">
+                                            Nha Trang có gì chơi? Top 20 điểm tham quan, ăn uống, vui chơi nổi tiếng
+                                        </h3>
+                                        <span class="home-product-item__desc">
+                                            Có thể nói, Nha Trang là một thành phố du lịch chưa bao giờ hết hot bởi nơi đây sở hữu nhiều cảnh quan thiên nhiên đẹp có bãi biển…
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col l-6 m-6 s-12">
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img-wrapper">
+                                            <img src="https://i1.wp.com/kenhhomestay.com/wp-content/uploads/2022/07/cho-lon-Nha-Trang-4-397x230.jpg" class="home-product-item__img">
+                                        </div>
+                                        <h3 class="home-product-item__heading">
+                                            Top các khu chợ lớn Nha Trang nổi tiếng du khách nên ghé thăm
+                                        </h3>
+                                        <span class="home-product-item__desc">
+                                            Nhắc đến Nha Trang người ta sẽ nghĩ ngay đến những bãi biển trong xanh nước biếc, trải dài cùng bờ cát trắng, tạo nên khung cảnh đẹp mê đắm…
+                                        </span>
+                                    </a>
+                                </div>
+        
+                                <div class="col l-6 m-6 s-12">
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img-wrapper">
+                                            <img src="https://i0.wp.com/kenhhomestay.com/wp-content/uploads/2022/07/hon-tre-2-397x230.jpg" class="home-product-item__img">
+                                        </div>
+                                        <h3 class="home-product-item__heading">
+                                            Review du lịch Hòn Tre chi tiết từ A - Z mới nhất 2022
+                                        </h3>
+                                        <span class="home-product-item__desc">
+                                            Hòn Tre là điểm tham quan nổi tiếng với nhiều công trình an sinh nghỉ dưỡng phục vụ nhu cầu du lịch. Trên “đảo thiên đường”, resort với kiến trúc…
+                                        </span>
+                                    </a>
+                                </div>
+        
+                                <div class="col l-6 m-6 s-12">
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img-wrapper">
+                                        <img src="https://i3.wp.com/kenhhomestay.com/wp-content/uploads/2022/06/dao-khi-nha-trang-6-397x230.jpg" class="home-product-item__img">
+                                        </div>
+                                        <h3 class="home-product-item__heading">
+                                            Đảo khỉ Nha Trang - Nơi tận hưởng niềm vui cùng thiên nhiên
+                                        </h3>
+                                        <span class="home-product-item__desc">
+                                            Đảo khỉ Nha Trang là một trong những địa điểm du lịch thiên nhiên nổi tiếng ít ai biết đến. Nếu có một ngày tại đây, bạn sẽ chơi và…
+                                    </a>
+                                </div>
+        
+                                <div class="pegination">
+                                    <div class="pegination-wrapper">
+                                        <ul class="pegination-list">
+                                            <li class="pegination-item pegination-item--active">
+                                                <a href="" class="pegination-item__link">
+                                                    1
+                                                </a>
+                                            </li>
+                                            <li class="pegination-item">
+                                                <a href="" class="pegination-item__link">
+                                                    2
+                                                </a>
+                                            </li>
+                                            <li class="pegination-item">
+                                                <a href="" class="pegination-item__link">
+                                                    3
+                                                </a>
+                                            </li>
+                                            <li class="pegination-item">
+                                                <a href="" class="pegination-item__link">
+                                                    4
+                                                </a>
+                                            </li>
+                                            <li class="pegination-item">
+                                                <a href="" class="pegination-item__link">
+                                                    5
+                                                </a>
+                                            </li>
+                                            
+                                            <li class="pegination-item">
+                                                <a href="" class="pegination-item__link">
+                                                    6
+                                                </a>
+                                            </li>
+                                            <li class="pegination-item">
+                                                <a href="" class="pegination-item__link">
+                                                    ...
+                                                </a>
+                                            </li>
+                                            <li class="pegination-item">
+                                                <a href="" class="pegination-item__link">
+                                                    72
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <span class="pegination__icon">
+                                            <i class="pegination__icon-next fa-solid fa-angle-right"></i>
+                                        </span>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="hot-keyword">
+                            <h3 class="hot-keyword__heading">Từ khóa tìm nhiều nhất</h3>
+                            <ul class="hot-keyword__list">
+                                <li class="hot-keyword__item">
+                                    <a href="https://kenhhomestay.com/top-50-homestay-dep-da-lat/" class="hot-keywords__item-link">
+                                        Homestay Đà Lạt
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="https://kenhhomestay.com/homestay-gia-re-vung-tau/" href="" class="hot-keywords__item-link">
+                                        Homestay vũng Tàu
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="https://kenhhomestay.com/villa-vung-tau/" class="hot-keywords__item-link">
+                                        Villa Vũng Tàu
+                                    </a>
+                                    ,
+                                    <a href="https://kenhhomestay.com/villa-vung-tau/" class="hot-keywords__item-link">
+                                        Biệt thự Vũng Tàu
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="https://kenhhomestay.com/villa-da-lat/" href="" class="hot-keywords__item-link">
+                                        Villa Đà Lạt
+                                    </a>
+                                    ,
+                                    <a href="https://kenhhomestay.com/villa-da-lat/" href="" class="hot-keywords__item-link">
+                                        Biệt thự Đà Lạt
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Villa FLC Sầm Sơn
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Flamingo Đại Lải villa
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Đà Nẵng
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Hội An
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Nha Trang
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Nha Trang
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Sài Gòn
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Hà Nội
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Tam Đảo
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Hạ Long
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Phan Thiết
+                                    </a>
+                                    ,
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Mũi Né
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Sapa
+                                    </a>
+                                    ,
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Mộc Châu
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Hà Giang
+                                    </a>
+                                    ,
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Bảo Lộc
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Quy Nhơn
+                                    </a>
+                                    ,
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Phú Yên
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Huế
+                                    </a>
+                                    ,
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Cô Tô
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Nam Du
+                                    </a>
+                                    ,
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Hòn Sơn
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Cần Thơ
+                                    </a>
+                                    ,
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Phú Quốc
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Côn Đảo
+                                    </a>
+                                    ,
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Ninh Thuận
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Sóc Sơn
+                                    </a>
+                                    ,
+                                    <a href="" class="hot-keywords__item-link">
+                                        homestay Ba Vì
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Ninh Bình
+                                    </a>
+                                    ,
+                                    <a href="" class="hot-keywords__item-link">
+                                        homestay Hồ Lâm
+                                    </a>
+                                </li>
+                                <li class="hot-keyword__item">
+                                    <a href="" class="hot-keywords__item-link">
+                                        Homestay Hải Phòng
+                                    </a>
+                                    ,
+                                    <a href="" class="hot-keywords__item-link">
+                                        homestay Hòa Bình
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="app__container-banner hide-on-mobile-tablet">
+                            <span class="app__container-banner-text">Liên hệ quảng cáo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-content__wrapper">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-6 c-12">
+                           <div class="footer-content footer-guide">
+                               <h3 class="footer-content__heading">
+                                    Thông tin cần biết
+                               </h3>
+                               <ul class="footer-content__list">
+                                   <li class="footer-content__item">
+                                       <a href="" class="footer-content__item-link">
+                                            Giới thiệu công ty và quyền hạn
+                                       </a>
+                                    </li>
+                                   <li class="footer-content__item">
+                                       <a href="" class="footer-content__item-link">
+                                            Giới thiệu website
+                                       </a>
+                                    </li>
+                                   <li class="footer-content__item">
+                                       <a href="" class="footer-content__item-link">
+                                            Liên hệ hợp tác
+                                       </a>
+                                    </li>
+                                   <li class="footer-content__item">
+                                       <a href="" class="footer-content__item-link">
+                                            Fanpage facebook
+                                       </a>
+                                    </li>
+                                   <li class="footer-content__item">
+                                       <a href="" class="footer-content__item-link">
+                                        Youtube
+                                       </a>
+                                    </li>
+                               </ul>
+                           </div>
+                        </div>
+
+                        <div class="col l-4 m-6 c-12">
+                            <div class="footer-content">
+                                <h3 class="footer-content__heading footer__policy">
+                                    Chính sách hoạt động
+                                </h3>
+                                <ul class="footer-content__list">
+                                    <li class="footer-content__item">
+                                        <a href="" class="footer-content__item-link">
+                                            Chính sách bảo mật thông tin khách hàng
+                                        </a>
+                                     </li>
+                                    <li class="footer-content__item">
+                                        <a href="" class="footer-content__item-link">
+                                            Cách mua hàng trên website
+                                        </a>
+                                     </li>
+                                    <li class="footer-content__item">
+                                        <a href="" class="footer-content__item-link">
+                                            Chính sách sử dụng
+                                        </a>
+                                     </li>
+                                    <li class="footer-content__item">
+                                        <a href="" class="footer-content__item-link">
+                                            Chính sách thanh toán-hoàn tiền
+                                        </a>
+                                     </li>
+                                    <li class="footer-content__item">
+                                        <a href="" class="footer-content__item-link">
+                                            Những câu hỏi thường gặp
+                                        </a>
+                                     </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="footer-content footer__payment">
+                                <h3 class="footer-content__heading">
+                                    Phương thức thanh toán
+                                </h3>
+                                <img src="./assets/img/acceptPay.png" alt="" class="footer-content__img-payment">
+                            </div>
+                        </div>
+                        <div class="footer__copyright">
+                            <span class="footer__copyright-text">
+                                © 2022 Kenhhomestay. Tất cả các quyền được bảo lưu.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
