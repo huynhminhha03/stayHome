@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Homestay - Chuyên trang tin tức, review Homestay đầu tiên Việt Nam với đầy đủ thông tin chính xác cập nhật thường xuyên và nhanh nhất.">
     <title>Chuyên trang tin tức Homestay đầu tiên Việt Nam</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/reponsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"
         rel="stylesheet">
 </head>
@@ -21,8 +22,8 @@
         <header id="header">
             <div class="grid wide">
                 <div class="header__logo">
-                    <a href="./index.html" class="header__logo-link">
-                        <img src="./assets/img/logo.png" alt="Homestay - Kênh tin tức tổng hợp về HomeStay và du lịch bụi" class="header__logo-img">
+                    <a href="/index.html" class="header__logo-link">
+                        <img src="/assets/img/logo.png" alt="Homestay - Kênh tin tức tổng hợp về HomeStay và du lịch bụi" class="header__logo-img">
                     </a>
                 </div>
                 <div class="header__navbar">
@@ -31,12 +32,12 @@
                     </div>
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
-                            <a href="./index.html" class="header__navbar-item-link">
+                            <a href="/index.html" class="header__navbar-item-link">
                                 Trang chủ
                             </a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--has-homestay-list">
-                            <a href="./homestay.html" class="header__navbar-item-link">
+                            <a href="/pages/homestay.html" class="header__navbar-item-link">
                                 Homestay
                                 <i class="fa-solid fa-angle-down header__navbar-item-icon"></i>
                             </a>
@@ -76,12 +77,12 @@
                             </div>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="./backpacking.html" class="header__navbar-item-link">
+                            <a href="/pages/backpacking.html" class="header__navbar-item-link">
                                 Phượt
                             </a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--has-villa-list">
-                            <a href="./villa.html" class="header__navbar-item-link">
+                            <a href="/pages/villa.html" class="header__navbar-item-link">
                                 Villa
                                 <i class="fa-solid fa-angle-down header__navbar-item-icon"></i>
                             </a>
@@ -121,18 +122,18 @@
                             </div>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="./toplist.html" class="header__navbar-item-link">
+                            <a href="/pages/toplist.html" class="header__navbar-item-link">
                                 Top list
                             </a>
                             
                         </li>
                         <li class="header__navbar-item">
-                            <a href="./bookroom.html" class="header__navbar-item-link">
+                            <a href="/pages/bookroom.html" class="header__navbar-item-link">
                                 Đặt phòng
                             </a>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="./booktickets.html" class="header__navbar-item-link">
+                            <a href="/pages/booktickets.html" class="header__navbar-item-link">
                                 Đặt vé xe Limouse
                             </a>
                         </li>
@@ -181,6 +182,9 @@
                                 </ul>
                             </div>
                         </li>
+                        <div class="header__navbar-escaped-btn">
+                            <i class="fa-solid fa-x header__navbar-escaped-icon"></i>
+                        </div>
                     </ul>
                     <div class="header__navbar-search">
                         <input type="text" placeholder="Tìm resort, homestay, hoặc villa,..." class="header__navbar-search-input">
@@ -188,88 +192,61 @@
                             <i class="fa-solid fa-magnifying-glass header__navbar-search-icon"></i>
                         </div>
                     </div>
-                    <div class="header__navbar-search-btn hide-on-mobile-tablet">
-                        <i class="fa-solid fa-magnifying-glass header__navbar-search-icon"></i>
-                    </div>
                     
                 </div>
             </div>
         </header>
         <div class="app__container">
+            <div class="dialog-box">
+                <span class="dialog-box__closed"><i class="fa-solid fa-circle-xmark dialog-box__closed-icon"></i></span>
+                <span class="dialog-box__heading">Click vào mã màu để có những trải nghiệm thú vị<i class="fa-solid fa-heart dialog-box__heading-icon"></i></span>
+                <div class="dialog-box__color-board">
+                    <div class="dialog-box__color color-blue"></div>
+                    <div class="dialog-box__color color-orange"></div>
+                    <div class="dialog-box__color color-pink"></div>
+                </div>
+            </div>
             <div class="grid wide">
                 <div class="row">
                     <div class="col l-9 m-12 c-12">
                         <div class="home-product">
                             <h4 class="page-posts">
-                                675 posts in
+                                205 posts in
                             </h4>
                             <h3 class="page-name">
-                                Toplist
+                                Đặt vé xe limousine
                             </h3>
                             <div class="row">
                                 <div class="col l-6 m-6 s-12">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
-                                        <img src="https://i2.wp.com/kenhhomestay.com/wp-content/uploads/2018/09/resort-hon-rom-4-1-397x230.jpg" alt="" class="home-product-item__img ">
+                                        <img src="https://i2.wp.com/kenhhomestay.com/wp-content/uploads/2021/04/dixere.vn_-397x230.jpg" alt="" class="home-product-item__img ">
                                         <span class="home-product-item__emotion">
                                             <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
                                         </span>
                                         </div>
                                         
                                         <h3 class="home-product-item__heading">
-                                            Review thác Prenn - Chốn rừng xanh giữa thiên nhiên Đà LạtTop 14 Resort Hòn Rơm giá rẻ đẹp view biển có hồ bơi và gần đồi cát bay
+                                            Dixere.vn - Thương bán vé xe khách online trực tuyến uy tín
                                         </h3>
                                         <span class="home-product-item__desc">
-                                            Mũi Né Phan Thiết hiện đang là điểm du lịch hấp dẫn với nhiều du khách trong và ngoài nước. Những khu resort Hòn Rơm, resort khu vực Mũi Né…
+                                            Dixere.vn là thương hiệu xây dựng bởi  Adam Việt Group với mục tiêu vì cộng đồng, giúp khách hàng đi xe dễ dàng tìm được các đơn vị vận tải…
                                         </span>
                                     </a>
                                 </div>
                                 <div class="col l-6 m-6 s-12">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
-                                            <img src="https://i2.wp.com/kenhhomestay.com/wp-content/uploads/2021/06/resort-ninh-binh-15-397x230.jpg" alt="" class="home-product-item__img">
+                                            <img src="https://i2.wp.com/kenhhomestay.com/wp-content/uploads/2020/08/Xe-Vip-Nhanh-Limousine-h%E1%BA%A1-long-1-397x230.jpg" alt="" class="home-product-item__img">
                                             <span class="home-product-item__emotion">
                                                 <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
                                             </span>
                                         </div>
                                         <h3 class="home-product-item__heading">
-                                            Top 17 Resort Ninh Bình giá rẻ view đẹp gần Tràng An, Tam Cốc, Hang Múa
+                                            Top 25 Nhà xe limousine Hà Nội Quảng Ninh Hạ Long chất lượng tốt, giá rẻ
                                         </h3>
                                         <span class="home-product-item__desc">
-                                            Cố Đô Hoa Lư – Ninh Bình hiện nay là một địa điểm du lịch vô cùng nổi tiếng, luôn đón rất nhiều lượt du khách kể cả trong và…
-                                        </span>
-                                    </a>
-                                </div>
-        
-                                <div class="col l-6 m-6 s-12">
-                                    <a href="" class="home-product-item">
-                                        <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
-                                            <img src="https://i1.wp.com/kenhhomestay.com/wp-content/uploads/2018/01/homestay-ben-tre-3-397x230.jpg" class="home-product-item__img">
-                                            <span class="home-product-item__emotion">
-                                                <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
-                                            </span>
-                                        </div>
-                                        <h3 class="home-product-item__heading">
-                                            Top 25 Homestay Bến Tre giá rẻ view đẹp decor xinh đậm chất miệt vườn
-                                        </h3>
-                                        <span class="home-product-item__desc">
-                                            Bến Tre là vùng đất gắn liền với những hàng dừa nghiêng bóng trên sông. Đặc trưng cho một không gian văn hóa tiêu biểu của vùng sông nước. Bến…
-                                    </a>
-                                </div>
-        
-                                <div class="col l-6 m-6 s-12">
-                                    <a href="" class="home-product-item">
-                                        <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
-                                            <img src="https://i3.wp.com/kenhhomestay.com/wp-content/uploads/2021/06/resort-can-tho-2-397x230.jpg"  class="home-product-item__img">
-                                            <span class="home-product-item__emotion">
-                                                <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
-                                            </span>
-                                        </div>
-                                        <h3 class="home-product-item__heading">
-                                            Top 24 Resort Cần Thơ đẹp gần trung tâm giá rẻ từ 3-4-5 sao giá tốt nhất
-                                        </h3>
-                                        <span class="home-product-item__desc">
-                                            Cần Thơ là một đô thị lớn của khu vực đồng bằng sông Cửu Long, có mạng lưới kênh rạch chằng chịt kết hợp với sự nhộn nhịp của chợ…
+                                            Bạn đang dự định đặt vé xe limousine Hà Nội Quảng Ninh hay dòng xe Vip Dacr cung điện di động chất lượng cao? Bạn muốn đi book vé xe…
                                         </span>
                                     </a>
                                 </div>
@@ -277,43 +254,62 @@
                                 <div class="col l-6 m-6 s-12">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
-                                            <img src="https://i1.wp.com/kenhhomestay.com/wp-content/uploads/2022/06/cau-tinh-yeu-da-nang-1-397x230.jpg" class="home-product-item__img">
+                                            <img src="https://i0.wp.com/kenhhomestay.com/wp-content/uploads/2019/05/anh-minh-limousine-2-397x230.jpg" class="home-product-item__img">
+                                            <span class="home-product-item__emotion">
+                                                <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
+                                            </span>
+                                        </div>
+                                        <h3 class="home-product-item__heading">
+                                            Ánh Minh Limousine phục vụ du khách đi Đà Nẵng - Tam Kỳ - Núi Thành
+                                        </h3>
+                                        <span class="home-product-item__desc">
+                                            Đà Nẵng, một thành phố du lịch tuyệt vời mà chắc chắn bạn nên đến một lần trong đời. Không những có bãi biển đẹp, nơi đây còn có vô…
+                                    </a>
+                                </div>
+        
+                                <div class="col l-6 m-6 s-12">
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
+                                            <img src="https://i1.wp.com/kenhhomestay.com/wp-content/uploads/2019/05/anh-dung-limousine-397x230.jpg"  class="home-product-item__img">
+                                            <span class="home-product-item__emotion">
+                                                <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
+                                            </span>
+                                        </div>
+                                        <h3 class="home-product-item__heading">
+                                            Anh Dũng Limousine đi Hà Nội - Hạ Long: ĐẶT VÉ NHANH
+                                        </h3>
+                                        <span class="home-product-item__desc">
+                                            Cách tiện lợi và nhanh nhất để bạn di chuyển tới đây có chính là lựa chọn di chuyển bằng xe khách Limousine. Một hãng xe khá uy tín cung…
+                                        </span>
+                                    </a>
+                                </div>
+        
+                                <div class="col l-6 m-6 s-12">
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
+                                            <img src="https://i2.wp.com/kenhhomestay.com/wp-content/uploads/2019/05/xe-cat-thien-hai-2-397x230.jpg" class="home-product-item__img">
                                             <span class="home-product-item__emotion">
                                                 <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
                                             </span>   
                                         </div>
                                         <h3 class="home-product-item__heading">
-                                            Nha Trang có gì chơi? Top 20 điểm tham quan, ăn uống, vui chơi nổi tiếng
+                                            Nhà xe Catthienhai Travel limousine 9 chỗ ngồi đi Nha Trang - Đà Lạt cực hiện đại
                                         </h3>
                                         <span class="home-product-item__desc">
-                                            Có thể nói, Nha Trang là một thành phố du lịch chưa bao giờ hết hot bởi nơi đây sở hữu nhiều cảnh quan thiên nhiên đẹp có bãi biển…
+                                            Tour du lịch Nha Trang-Đà Lạt dường như đã khá phổ biến với các du khách. Chắc hẳn những du khách nơi xa đến với bãi biển Nha Trang cũng…
                                         </span>
                                     </a>
                                 </div>
                                 <div class="col l-6 m-6 s-12">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img-wrapper">
-                                            <img src="https://i1.wp.com/kenhhomestay.com/wp-content/uploads/2022/07/cho-lon-Nha-Trang-4-397x230.jpg" class="home-product-item__img">
+                                            <img src="https://i1.wp.com/kenhhomestay.com/wp-content/uploads/2019/05/nha-xe-bon-hai-1-397x230.jpg" class="home-product-item__img">
                                         </div>
                                         <h3 class="home-product-item__heading">
-                                            Top các khu chợ lớn Nha Trang nổi tiếng du khách nên ghé thăm
+                                            Nhà xe Bốn Hai: Phục vụ xe giường nằm, limousine đi Hà Nội – Cao Bằng
                                         </h3>
                                         <span class="home-product-item__desc">
-                                            Nhắc đến Nha Trang người ta sẽ nghĩ ngay đến những bãi biển trong xanh nước biếc, trải dài cùng bờ cát trắng, tạo nên khung cảnh đẹp mê đắm…
-                                        </span>
-                                    </a>
-                                </div>
-        
-                                <div class="col l-6 m-6 s-12">
-                                    <a href="" class="home-product-item">
-                                        <div class="home-product-item__img-wrapper">
-                                            <img src="https://i0.wp.com/kenhhomestay.com/wp-content/uploads/2022/07/hon-tre-2-397x230.jpg" class="home-product-item__img">
-                                        </div>
-                                        <h3 class="home-product-item__heading">
-                                            Review du lịch Hòn Tre chi tiết từ A - Z mới nhất 2022
-                                        </h3>
-                                        <span class="home-product-item__desc">
-                                            Hòn Tre là điểm tham quan nổi tiếng với nhiều công trình an sinh nghỉ dưỡng phục vụ nhu cầu du lịch. Trên “đảo thiên đường”, resort với kiến trúc…
+                                            Hãy tham khảo ngay bài viết này nếu bạn đang có ý định di chuyển từ Hà Nội tới Cao Bằng. Ngày nay việc di chuyển giữa các thành phố…
                                         </span>
                                     </a>
                                 </div>
@@ -321,58 +317,71 @@
                                 <div class="col l-6 m-6 s-12">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img-wrapper">
-                                        <img src="https://i3.wp.com/kenhhomestay.com/wp-content/uploads/2022/06/dao-khi-nha-trang-6-397x230.jpg" class="home-product-item__img">
+                                            <img src="https://i2.wp.com/kenhhomestay.com/wp-content/uploads/2019/11/nha-xe-Thao-Hong-397x230.jpg" class="home-product-item__img">
                                         </div>
                                         <h3 class="home-product-item__heading">
-                                            Đảo khỉ Nha Trang - Nơi tận hưởng niềm vui cùng thiên nhiên
+                                            Nhà xe Thảo Hồng, Bà Rịa - Vũng Tàu đi Đà Lạt: Liên hệ đặt vé sớm nhất
                                         </h3>
                                         <span class="home-product-item__desc">
-                                            Đảo khỉ Nha Trang là một trong những địa điểm du lịch thiên nhiên nổi tiếng ít ai biết đến. Nếu có một ngày tại đây, bạn sẽ chơi và…
+                                            Hãy cứ đi khi con có thể, câu nói thúc giục tình yêu du lịch của mỗi chúng ta. Bà Rịa – Vũng Tàu và Đà Lạt là những điểm…
+                                        </span>
+                                    </a>
+                                </div>
+        
+                                <div class="col l-6 m-6 s-12">
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img-wrapper">
+                                        <img src="https://i3.wp.com/kenhhomestay.com/wp-content/uploads/2019/05/xe-green-bus-1-397x230.jpg" class="home-product-item__img">
+                                        </div>
+                                        <h3 class="home-product-item__heading">
+                                            Nhà xe Green Bus đi Hà Nội - Sapa có xe giường nằm và limousine VIP
+                                        </h3>
+                                        <span class="home-product-item__desc">
+                                            Nếu bạn đang muốn tìm một nhà xe uy tín để đi từ Hà Nội tới địa điểm du lịch siêu hot Sapa thì đây chính là bài viết bạn…
+                                        </span>
                                     </a>
                                 </div>
         
                                 <div class="pegination">
                                     <div class="pegination-wrapper">
+                                        <span class="pegination__icon ">
+                                            <i class="pegination__icon-back fa-solid fa-angle-left pegination__icon--inactived"></i>
+                                        </span>
                                         <ul class="pegination-list">
                                             <li class="pegination-item pegination-item--active">
-                                                <a href="" class="pegination-item__link">
+                                                <a href="#" class="pegination-item__link">
                                                     1
                                                 </a>
                                             </li>
                                             <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
+                                                <a href="#" class="pegination-item__link">
                                                     2
                                                 </a>
                                             </li>
                                             <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
+                                                <a href="#" class="pegination-item__link">
                                                     3
                                                 </a>
                                             </li>
                                             <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
+                                                <a href="#" class="pegination-item__link">
                                                     4
                                                 </a>
                                             </li>
                                             <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
+                                                <a href="#" class="pegination-item__link">
                                                     5
                                                 </a>
                                             </li>
                                             
                                             <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
-                                                    6
-                                                </a>
-                                            </li>
-                                            <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
+                                                <a href="#" class="pegination-item__link">
                                                     ...
                                                 </a>
                                             </li>
                                             <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
-                                                    72
+                                                <a href="#" class="pegination-item__link">
+                                                    18
                                                 </a>
                                             </li>
                                         </ul>
@@ -653,7 +662,7 @@
                                 <h3 class="footer-content__heading">
                                     Phương thức thanh toán
                                 </h3>
-                                <img src="./assets/img/acceptPay.png" alt="" class="footer-content__img-payment">
+                                <img src="/assets/img/acceptPay.png" alt="" class="footer-content__img-payment">
                             </div>
                         </div>
                         <div class="footer__copyright">
@@ -673,8 +682,19 @@
                 </div>
             </div>
         </footer>
+                    <!-- Modal Layout -->
+            
+                    <div class="modal">
+                        <div class="modal__overlay"> </div>
+                    </div>
+                </div>
+            
+                <!-- Go to top -->
+                <div title="Về đầu trang" id="top-up">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </div>
+            
     </div>
 </body>
-<script src="./main.js"></script>
-
+<script src="/main.js"></script>
 </html>

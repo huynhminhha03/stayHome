@@ -8,6 +8,7 @@
     <title>Chuyên trang tin tức Homestay đầu tiên Việt Nam</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
@@ -36,7 +37,7 @@
                             </a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--has-homestay-list">
-                            <a href="./homestay.html" class="header__navbar-item-link">
+                            <a href="./pages/homestay.html" class="header__navbar-item-link">
                                 Homestay
                                 <i class="fa-solid fa-angle-down header__navbar-item-icon"></i>
                             </a>
@@ -76,12 +77,12 @@
                             </div>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="./backpacking.html" class="header__navbar-item-link">
+                            <a href="./pages/backpacking.html" class="header__navbar-item-link">
                                 Phượt
                             </a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--has-villa-list">
-                            <a href="./villa.html" class="header__navbar-item-link">
+                            <a href="./pages/villa.html" class="header__navbar-item-link">
                                 Villa
                                 <i class="fa-solid fa-angle-down header__navbar-item-icon"></i>
                             </a>
@@ -121,18 +122,18 @@
                             </div>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="./toplist.html" class="header__navbar-item-link">
+                            <a href="./pages/toplist.html" class="header__navbar-item-link">
                                 Top list
                             </a>
                             
                         </li>
                         <li class="header__navbar-item">
-                            <a href="./bookroom.html" class="header__navbar-item-link">
+                            <a href="./pages/bookroom.html" class="header__navbar-item-link">
                                 Đặt phòng
                             </a>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="/booktickets.html" class="header__navbar-item-link">
+                            <a href="/pages/booktickets.html" class="header__navbar-item-link">
                                 Đặt vé xe Limouse
                             </a>
                         </li>
@@ -181,6 +182,9 @@
                                 </ul>
                             </div>
                         </li>
+                        <div class="header__navbar-escaped-btn">
+                            <i class="fa-solid fa-x header__navbar-escaped-icon"></i>
+                        </div>
                     </ul>
                     <div class="header__navbar-search">
                         <input type="text" placeholder="Tìm resort, homestay, hoặc villa,..." class="header__navbar-search-input">
@@ -188,14 +192,20 @@
                             <i class="fa-solid fa-magnifying-glass header__navbar-search-icon"></i>
                         </div>
                     </div>
-                    <div class="header__navbar-search-btn hide-on-mobile-tablet">
-                        <i class="fa-solid fa-magnifying-glass header__navbar-search-icon"></i>
-                    </div>
                     
                 </div>
             </div>
         </header>
         <div class="app__container">
+            <div class="dialog-box">
+                <span class="dialog-box__closed"><i class="fa-solid fa-circle-xmark dialog-box__closed-icon"></i></span>
+                <span class="dialog-box__heading">Click vào mã màu để có những trải nghiệm thú vị<i class="fa-solid fa-heart dialog-box__heading-icon"></i></span>
+                <div class="dialog-box__color-board">
+                    <div class="dialog-box__color color-blue"></div>
+                    <div class="dialog-box__color color-orange"></div>
+                    <div class="dialog-box__color color-pink"></div>
+                </div>
+            </div>
             <div class="home-product">
                 <div class="grid wide">
                     <div class="row">
@@ -414,6 +424,9 @@
             </div>
             <div class="pegination">
                 <div class="pegination-wrapper">
+                    <span class="pegination__icon ">
+                        <i class="pegination__icon-back fa-solid fa-angle-left pegination__icon--inactived"></i>
+                    </span>
                     <ul class="pegination-list">
                         <li class="pegination-item pegination-item--active">
                             <a href="#" class="pegination-item__link">
@@ -552,8 +565,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="footer__banner hide-on-mobile-tablet">
+                    <span class="footer__banner-wrapper">
+                        <img src="/assets/img/Sportbet.gif" alt="" class="footer__banner-img">
+                        <span class="footer__banner-escaped-btn">
+                            <i class="fa-solid fa-x footer__banner-escaped-icon"></i>
+                        </span>
+                    </span>
+                </div>
             </div>
         </footer>
+            <!-- Modal Layout -->
+            
+        <div class="modal">
+            <div class="modal__overlay"> </div>
+        </div>
+    </div>
+
+    <!-- Go to top -->
+    <div title="Về đầu trang" id="top-up">
+        <i class="fas fa-arrow-circle-up"></i>
     </div>
 
     <script src="./main.js"></script>

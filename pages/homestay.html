@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Homestay - Chuyên trang tin tức, review Homestay đầu tiên Việt Nam với đầy đủ thông tin chính xác cập nhật thường xuyên và nhanh nhất.">
     <title>Chuyên trang tin tức Homestay đầu tiên Việt Nam</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/reponsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"
         rel="stylesheet">
 </head>
@@ -21,8 +22,8 @@
         <header id="header">
             <div class="grid wide">
                 <div class="header__logo">
-                    <a href="./index.html" class="header__logo-link">
-                        <img src="./assets/img/logo.png" alt="Homestay - Kênh tin tức tổng hợp về HomeStay và du lịch bụi" class="header__logo-img">
+                    <a href="/index.html" class="header__logo-link">
+                        <img src="/assets/img/logo.png" alt="Homestay - Kênh tin tức tổng hợp về HomeStay và du lịch bụi" class="header__logo-img">
                     </a>
                 </div>
                 <div class="header__navbar">
@@ -31,12 +32,12 @@
                     </div>
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
-                            <a href="./index.html" class="header__navbar-item-link">
+                            <a href="/index.html" class="header__navbar-item-link">
                                 Trang chủ
                             </a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--has-homestay-list">
-                            <a href="./homestay.html"class="header__navbar-item-link">
+                            <a href="/pages/homestay.html"class="header__navbar-item-link">
                                 Homestay
                                 <i class="fa-solid fa-angle-down header__navbar-item-icon"></i>
                             </a>
@@ -76,12 +77,12 @@
                             </div>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="./backpacking.html" class="header__navbar-item-link">
+                            <a href="/pages/backpacking.html" class="header__navbar-item-link">
                                 Phượt
                             </a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--has-villa-list">
-                            <a href="./villa.html" class="header__navbar-item-link">
+                            <a href="/pages/villa.html" class="header__navbar-item-link">
                                 Villa
                                 <i class="fa-solid fa-angle-down header__navbar-item-icon"></i>
                             </a>
@@ -121,18 +122,18 @@
                             </div>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="./toplist.html" class="header__navbar-item-link">
+                            <a href="/pages/toplist.html" class="header__navbar-item-link">
                                 Top list
                             </a>
                             
                         </li>
                         <li class="header__navbar-item">
-                            <a href="./bookroom.html" class="header__navbar-item-link">
+                            <a href="/pages/bookroom.html" class="header__navbar-item-link">
                                 Đặt phòng
                             </a>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="./booktickets.html" class="header__navbar-item-link">
+                            <a href="/pages/booktickets.html" class="header__navbar-item-link">
                                 Đặt vé xe Limouse
                             </a>
                         </li>
@@ -181,6 +182,9 @@
                                 </ul>
                             </div>
                         </li>
+                        <div class="header__navbar-escaped-btn">
+                            <i class="fa-solid fa-x header__navbar-escaped-icon"></i>
+                        </div>
                     </ul>
                     <div class="header__navbar-search">
                         <input type="text" placeholder="Tìm resort, homestay, hoặc villa,..." class="header__navbar-search-input">
@@ -188,55 +192,61 @@
                             <i class="fa-solid fa-magnifying-glass header__navbar-search-icon"></i>
                         </div>
                     </div>
-                    <div class="header__navbar-search-btn hide-on-mobile-tablet">
-                        <i class="fa-solid fa-magnifying-glass header__navbar-search-icon"></i>
-                    </div>
                     
                 </div>
             </div>
         </header>
         <div class="app__container">
+            <div class="dialog-box">
+                <span class="dialog-box__closed"><i class="fa-solid fa-circle-xmark dialog-box__closed-icon"></i></span>
+                <span class="dialog-box__heading">Click vào mã màu để có những trải nghiệm thú vị<i class="fa-solid fa-heart dialog-box__heading-icon"></i></span>
+                <div class="dialog-box__color-board">
+                    <div class="dialog-box__color color-blue"></div>
+                    <div class="dialog-box__color color-orange"></div>
+                    <div class="dialog-box__color color-pink"></div>
+                </div>
+            </div>
             <div class="grid wide">
                 <div class="row">
                     <div class="col l-9 m-12 c-12">
                         <div class="home-product">
                             <h4 class="page-posts">
-                                130 posts in
+                                1014 posts in
                             </h4>
                             <h3 class="page-name">
-                                Villa
+                                Homestay
                             </h3>
                             <div class="row">
                                 <div class="col l-6 m-6 s-12">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
-                                        <img src="https://i1.wp.com/kenhhomestay.com/wp-content/uploads/2022/04/Royal-Lotus-Halong-Resort-_-Villas-1-397x230.jpg" alt="" class="home-product-item__img ">
+                                        <img src="https://i1.wp.com/kenhhomestay.com/wp-content/uploads/2022/03/5-Homestay-Vung-Tau-3-397x230.jpeg" alt="" class="home-product-item__img ">
                                         <span class="home-product-item__emotion">
                                             <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
                                         </span>
                                         </div>
                                         
                                         <h3 class="home-product-item__heading">
-                                            Review khu nghỉ dưỡng đẳng cấp - Royal Lotus Ha Long Resort & Villas
+                                            5 Homestay Vũng Tàu - Một thoáng ngẩn ngơ bên nắng gió
                                         </h3>
                                         <span class="home-product-item__desc">
-                                            Royal Lotus Ha Long Resort & Villas – bông sen rực sắc giữa lòng thành phố biển Hạ Long. Nổi tiếng với dịch vụ đẳng cấp cùng cơ sở hạ…
+                                            Vũng Tàu là thành phố biển nổi bật khu vực miền Nam Bộ. Vào dịp hè thì nơi đây là điểm đến hàng đầu được nhiều du khách yêu thích…
                                         </span>
                                     </a>
                                 </div>
                                 <div class="col l-6 m-6 s-12">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
-                                            <img src="https://i1.wp.com/kenhhomestay.com/wp-content/uploads/2022/01/Paramount-Villa-Tien-Xuan-4-397x230.jpg" alt="" class="home-product-item__img">
+                                            <img src="https://i2.wp.com/kenhhomestay.com/wp-content/uploads/2022/06/Pu-Luong-Riverside-Lodge-1-397x230.jpg" alt="" class="home-product-item__img">
                                             <span class="home-product-item__emotion">
                                                 <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
                                             </span>
                                         </div>
                                         <h3 class="home-product-item__heading">
-                                            Paramount Villa Tiến Xuân - Chạm đến thiên đường mộng mơ bên sườn núi
+                                            Pu Luong Riverside Lodge - Điểm hẹn của thiên nhiên xứ Thanh
                                         </h3>
                                         <span class="home-product-item__desc">
-                                            Paramount Villa Tiến Xuân, nằm tựa bên đỉnh núi cao thứ 2 tại Tiến Xuân giữa khung cảnh thiên nhiên ngút ngàn xanh mát, “Thiên đường nghỉ dưỡng bên sườn…
+                                            Pù Luông là điểm đến vô cùng thu hút du khách bởi vẻ đẹp thiên nhiên hoang sơ và thơ mộng trong những năm gần đây. Chính vì vậy mà…
                                         </span>
                                     </a>
                                 </div>
@@ -244,32 +254,32 @@
                                 <div class="col l-6 m-6 s-12">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
-                                            <img src="https://i2.wp.com/kenhhomestay.com/wp-content/uploads/2021/10/rose-villa-ba-vi-17-397x230.jpg" class="home-product-item__img">
+                                            <img src="https://i1.wp.com/kenhhomestay.com/wp-content/uploads/2022/04/Anyas-Home-Sapa-2-397x230.jpg" class="home-product-item__img">
                                             <span class="home-product-item__emotion">
                                                 <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
                                             </span>
                                         </div>
                                         <h3 class="home-product-item__heading">
-                                            [Review] Rose Villa Ba Vì - Bảng giá & kinh nghiệm đặt phòng tốt nhất
+                                            Homestay Anya's Home Sapa - Homestay Đẳng Cấp 5 Sao 
                                         </h3>
                                         <span class="home-product-item__desc">
-                                            Tựa như một bức tranh thuỷ mặc nằm giữa không gian tĩnh lặng và thơ mộng của núi rừng. Rose Villa Ba Vì luôn là điểm đến hấp dẫn của…
+                                            Du lịch Sapa là một trong những địa điểm nổi tiếng thu hút đông đảo khách du lịch trong và ngoài nước, nơi đây không chỉ được mẹ thiên nhiên…
                                     </a>
                                 </div>
         
                                 <div class="col l-6 m-6 s-12">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img-wrapper home-product-item__img--has-emotion">
-                                            <img src="https://i2.wp.com/kenhhomestay.com/wp-content/uploads/2018/11/biet-thu-villa-hoa-binh-1-397x230.jpg"  class="home-product-item__img">
+                                            <img src="https://i3.wp.com/kenhhomestay.com/wp-content/uploads/2022/03/Go-Thong-Homestay-2-397x230.jpeg"  class="home-product-item__img">
                                             <span class="home-product-item__emotion">
                                                 <i class="fa-solid fa-heart home-product-item__emotion-icon"></i>
                                             </span>
                                         </div>
                                         <h3 class="home-product-item__heading">
-                                            20 Biệt thự villa Hòa Bình Mai Châu giá rẻ đẹp có hồ bơi cho thuê
+                                            Gỗ Thông Homestay - Mộc mạc giữa thành phố ngàn hoa
                                         </h3>
                                         <span class="home-product-item__desc">
-                                            Hòa Bình nổi tiếng với những khu du lịch sinh thái với những trải nghiệm về cuộc sống bình dị, phong tục tập quán của người dân địa phương. Không…
+                                            Đà Lạt mộng mơ đã quá nổi tiếng với những resort và khách sạn hạng sang, tìm kiếm một homestay dân dã là điều không hề dễ dàng. Gỗ Thông…
                                         </span>
                                     </a>
                                 </div>
@@ -334,46 +344,44 @@
         
                                 <div class="pegination">
                                     <div class="pegination-wrapper">
+                                        <span class="pegination__icon ">
+                                            <i class="pegination__icon-back fa-solid fa-angle-left pegination__icon--inactived"></i>
+                                        </span>
                                         <ul class="pegination-list">
                                             <li class="pegination-item pegination-item--active">
-                                                <a href="" class="pegination-item__link">
+                                                <a href="#" class="pegination-item__link">
                                                     1
                                                 </a>
                                             </li>
                                             <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
+                                                <a href="#" class="pegination-item__link">
                                                     2
                                                 </a>
                                             </li>
                                             <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
+                                                <a href="#" class="pegination-item__link">
                                                     3
                                                 </a>
                                             </li>
                                             <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
+                                                <a href="#" class="pegination-item__link">
                                                     4
                                                 </a>
                                             </li>
                                             <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
+                                                <a href="#" class="pegination-item__link">
                                                     5
                                                 </a>
                                             </li>
                                             
                                             <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
-                                                    6
-                                                </a>
-                                            </li>
-                                            <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
+                                                <a href="#" class="pegination-item__link">
                                                     ...
                                                 </a>
                                             </li>
                                             <li class="pegination-item">
-                                                <a href="" class="pegination-item__link">
-                                                    72
+                                                <a href="#" class="pegination-item__link">
+                                                    32
                                                 </a>
                                             </li>
                                         </ul>
@@ -654,7 +662,7 @@
                                 <h3 class="footer-content__heading">
                                     Phương thức thanh toán
                                 </h3>
-                                <img src="./assets/img/acceptPay.png" alt="" class="footer-content__img-payment">
+                                <img src="/assets/img/acceptPay.png" alt="" class="footer-content__img-payment">
                             </div>
                         </div>
                         <div class="footer__copyright">
@@ -664,10 +672,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="footer__banner hide-on-mobile-tablet">
+                    <span class="footer__banner-wrapper">
+                        <img src="/assets/img/Sportbet.gif" alt="" class="footer__banner-img">
+                        <span class="footer__banner-escaped-btn">
+                            <i class="fa-solid fa-x footer__banner-escaped-icon"></i>
+                        </span>
+                    </span>
+                </div>
             </div>
         </footer>
+                    <!-- Modal Layout -->
+            
+                    <div class="modal">
+                        <div class="modal__overlay"> </div>
+                    </div>
+                </div>
+            
+                <!-- Go to top -->
+                <div title="Về đầu trang" id="top-up">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </div>
+            
     </div>
+    <script src="/main.js"></script>
 </body>
-<script src="./main.js"></script>
-
 </html>

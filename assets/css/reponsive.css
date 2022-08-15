@@ -8,14 +8,36 @@
         margin-bottom: 26px;
         padding-bottom: 4px;
     }
-    .header__navbar-list {
-        display: none;
-    }
+    
+
     .header__navbar-list-btn{
         display: block;
     }
+    .header__navbar-list {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -50%;
+        width: 50%;
+        margin: 0;
+        background-color: var(--white-color);
+    }
+
     .header__navbar-search {
         display: flex;
+    }
+    .header__navbar-item--has-homestay-list:hover .header__homestay{
+        display: none;
+    }
+    .header__navbar-item--has-villa-list:hover .header__villa{
+        display: none;
+    }
+    .header__navbar-item--has-synthanic-list:hover .header__synthanic{
+        display: none;
+    }
+    .header__navbar-escaped-btn {
+        display: block;
     }
     .page-name {
         margin-left: 10px;
@@ -33,6 +55,9 @@
     .footer-content__heading {
         margin-left: 0px;
     }
+    #top-up {
+        font-size: 4rem;
+    }
     
 
 }
@@ -45,7 +70,14 @@
     .home-product-item__heading {
         padding: 0 8px;
     }
-    
+    .header__navbar-item-link {
+        font-size: 1.8rem;
+        padding: 30px 50px;
+        margin: 10px 0;
+        display: block;
+        width: 100%;
+    }
+  
     
 
 }
@@ -62,6 +94,19 @@
     .header__navbar {
         --height-navbar: 48px;
         margin: 0 8px;
+    }
+
+    .header__navbar-item-link {
+        font-size: 1.4rem;
+        padding: 30px 16px;
+        margin: 10px 30px 10px 0;
+        display: block;
+        width: 100%;
+    }
+    
+
+    .home-product {
+        margin-top: 120px;
     }
     .home-product-item{
         padding: 0 8px;
