@@ -280,7 +280,7 @@
     background-color: #f7f7f7;
     border-radius: 3px;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
-    z-index: 3;
+    z-index: 4;
     opacity: 0;
 }
 
@@ -335,7 +335,7 @@
 /* Home product */
 
 .home-product {
-    margin-top: 170px;
+    margin-top: 172px;
 }
 
 .home-product-item {
@@ -699,7 +699,7 @@
     font-size: 5rem;
     cursor: pointer;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     color: var(--primary-color);
     bottom: 20px;
     right: 24px;
