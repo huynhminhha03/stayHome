@@ -109,7 +109,10 @@
         margin-top: 120px;
     }
     .home-product-item{
-        padding: 0 4px;
+        padding: 0 8px;
+    }
+    .pegination-item {
+        padding: 0 6px;
     }
     .pegination__icon {
         padding: 0 6px;
