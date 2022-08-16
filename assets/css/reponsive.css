@@ -111,8 +111,8 @@
     .home-product-item{
         padding: 0 8px;
     }
-    .pegination-item {
-        margin: 0 5px;
+    .pegination__icon {
+        padding: 0 6px;
     }
     .footer-content__img-payment {
         width: 94%;
