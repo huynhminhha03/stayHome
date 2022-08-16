@@ -18,8 +18,8 @@
         position: fixed;
         top: 0;
         bottom: 0;
-        left: -50%;
-        width: 50%;
+        left: -70%;
+        width: 70%;
         margin: 0;
         background-color: var(--white-color);
     }

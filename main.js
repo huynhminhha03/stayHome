@@ -12,13 +12,13 @@ $(document).ready(function () {
     $('.header__navbar-escaped-btn').click(function () {
         $('.modal').css('display', 'none');
         $('.header__navbar-list').animate({
-            "left": "-50%",
+            "left": "-70%",
         }, "medium");
     });
     $('.modal').click(function () {
         $('.modal').css('display', 'none');
         $('.header__navbar-list').animate({
-            "left": "-50%",
+            "left": "-70%",
         }, "medium");
     });
 
